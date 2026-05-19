@@ -22,10 +22,10 @@ Options:
 		OTU table taxonomy resolution(ex.Species,Genus,Family)
 
 	-i CHARACTER, --input=CHARACTER
-		taxonomy table directory
+		taxonomy table (csv file only)
 
 	-o CHARACTER, --output=CHARACTER
-		OTU table output directory
+		OTU table output file
 
 	-h, --help
 		Show this help message and exit
@@ -33,7 +33,7 @@ Options:
 
 
 ``` shell
-rscript OTUtabler.R -l genus -i taxonomy table -o OTU table output
+rscript OTUtabler_V2.R -l genus -i taxonomy table -o OTU table output
 ```
 # Output
 ## example from 16s rRNA full length Gut microbiota 
