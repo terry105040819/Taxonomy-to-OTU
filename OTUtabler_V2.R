@@ -1,3 +1,7 @@
+if(!require(optparse)) install.packages("optparse", repos = "https://cloud.r-project.org")
+if(!require(dplyr)) install.packages("dplyr", repos = "https://cloud.r-project.org")
+if(!require(tidyr)) install.packages("tidyr", repos = "https://cloud.r-project.org")
+
 required_libraries <- c("optparse","dplyr","tidyr")
 #loading required libraries. 
 lapply(required_libraries, require, character.only = TRUE) 
