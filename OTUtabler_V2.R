@@ -1,6 +1,7 @@
-library(optparse)
-library(dplyr)
-library(tidyr)
+required_libraries <- c("optparse","dplyr","tidyr")
+#loading required libraries. 
+lapply(required_libraries, require, character.only = TRUE) 
+
 args = commandArgs(trailingOnly=TRUE)
 
 option_list <- list(
